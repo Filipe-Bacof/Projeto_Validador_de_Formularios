@@ -18,15 +18,15 @@
         <form method="post" action="cadastro.php" class="bacofValidator">
           <label>
             Seu nome: <br />
-            <input type="text" name="Name" data-rules="required" />
+            <input type="text" name="Name" data-rules="required|min-2" />
           </label>
           <label>
             Seu e-mail: <br />
-            <input type="email" name="E-mail" />
+            <input type="email" name="E-mail" data-rules="required" />
           </label>
           <label>
             Sua senha: <br />
-            <input type="password" name="Password" />
+            <input type="password" name="Password" data-rules="required" />
           </label>
           <label>
             <input type="submit" name="Cadastrar" />
